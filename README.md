@@ -43,21 +43,21 @@ O código já está configurado para baixar automaticamente o dataset do Google 
 
 ## 📊 Principais Conclusões e Considerações
 
-Distribuição e Correlação dos Dados:
-    As variáveis apresentam padrões específicos que foram explorados por meio da análise de distribuição e matriz de correlação.
-    A redução dimensional com PCA permitiu visualizar melhor os agrupamentos iniciais.
+#### Distribuição e Correlação dos Dados:
+As variáveis apresentam padrões específicos que foram explorados por meio da análise de distribuição e matriz de correlação.
+A redução dimensional com PCA permitiu visualizar melhor os agrupamentos iniciais.
 
-Definição do Número de Clusters:
-    O número ideal de clusters foi definido como k=6 com base no método do cotovelo e no Silhouette Score.
-    Os clusters apresentaram uma separação satisfatória em 2D, indicando que as atividades humanas podem ser agrupadas de maneira coerente com base nas   características do dataset.
+#### Definição do Número de Clusters:
+O número ideal de clusters foi definido como k=6 com base no método do cotovelo e no Silhouette Score.
+Os clusters apresentaram uma separação satisfatória em 2D, indicando que as atividades humanas podem ser agrupadas de maneira coerente com base nas   características do dataset.
 
-Avaliação de Performance:
-    O Silhouette Score final obteve um valor satisfatório, sugerindo que os agrupamentos formados possuem boa coesão interna e separação externa.
-    A repetição do K-means várias vezes confirmou a estabilidade dos agrupamentos.
+#### Avaliação de Performance:
+O Silhouette Score final obteve um valor satisfatório, sugerindo que os agrupamentos formados possuem boa coesão interna e separação externa.
+A repetição do K-means várias vezes confirmou a estabilidade dos agrupamentos.
 
-Limitações:
-    O dataset foi reduzido para duas dimensões com PCA, o que pode simplificar demais a complexidade dos dados originais.
-    Algumas atividades podem ter sobreposição em 2D, sugerindo que outras técnicas de clustering e mais componentes principais podem melhorar os resultados.
+#### Limitações:
+O dataset foi reduzido para duas dimensões com PCA, o que pode simplificar demais a complexidade dos dados originais.
+Algumas atividades podem ter sobreposição em 2D, sugerindo que outras técnicas de clustering e mais componentes principais podem melhorar os resultados.
 
 ### 👥 Autores
 
