@@ -63,5 +63,6 @@ Algumas atividades podem ter sobreposição em 2D, sugerindo que outras técnica
 
 Grupo 24
 
-Jeferson Braga Luz
+Jeferson Braga Luz,
+
 Rafael Rodrigues Souza
