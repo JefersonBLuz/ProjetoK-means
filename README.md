@@ -24,7 +24,7 @@ Requisitos:
     Scikit-learn
     SciPy
 
-##### 3. Instale as Bibliotecas Necessárias (se necessário)
+### 3. Instale as Bibliotecas Necessárias (se necessário)
 
 No Colab, você pode instalar as bibliotecas necessárias executando o seguinte comando no início do notebook:
 
