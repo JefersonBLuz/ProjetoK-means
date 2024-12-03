@@ -1,18 +1,35 @@
 # Implementação e Análise do Algoritmo de K-means
 Reconhecimento de Atividade Humana com Dados de Smartphones
 
+Súmario
+---
+1. [Objetivo do Projeto](#Objetivo-do-Projeto)
+2. [Instruções para Executar o Código](#%EF%B8%8F-instruções-para-executar-o-código)
+   1. [Carregar o Arquivo.](#1-carregue-o-arquivo-notebook)
+   2. [Certificar pacotes necessários.](#2-certifique-se-de-que-você-tem-o-python-e-os-pacotes-necessários-instalados)
+   3. [Instalar bibliotecas necessárias.](#3-instale-as-bibliotecas-necessárias-se-necessário)
+   4. [Baixe e extraia o dataset.](#4-baixe-e-extraia-o-dataset)
+   5. [Execute as Células do Notebook](#5-execute-as-células-do-notebook)
+3. [Conclusões e Considerações]()
+    1. [Distribuição e Correlação dos Dados](#distribuição-e-correlação-dos-dados)
+    2. [Definição do Número de Clusters](#definição-do-número-de-clusters)
+    3. [Avaliação de Performance](#avaliação-de-performance)
+    4. [Limitações](#limitações)
+5. [Autores](#-autores)
+6. [Dicas](#-dicas-adicionais-para-o-google-colab)
 
+   
 ## 📋Objetivo do Projeto
 
 Este projeto tem como objetivo implementar o algoritmo de agrupamento K-means para análise e reconhecimento de padrões no dataset Human Activity Recognition Using Smartphones. O foco está em aplicar técnicas de redução de dimensionalidade, agrupar as atividades humanas com base nas variáveis fornecidas e avaliar a performance do modelo por meio de métricas adequadas.
 
 ## 🛠️ Instruções para Executar o Código
 
-### 1. Carregue o Arquivo Notebook
+* ### 1. Carregue o Arquivo Notebook
 Faça upload do arquivo ProjetoTIC36_KMeans.ipynb para o Google Drive.
 Abra o notebook diretamente no Colab ou faça o upload do arquivo local para o ambiente Colab.
 
-### 2. Certifique-se de que você tem o Python e os pacotes necessários instalados.
+* ### 2. Certifique-se de que você tem o Python e os pacotes necessários instalados.
 
 Requisitos:
 
@@ -24,20 +41,20 @@ Requisitos:
     Scikit-learn
     SciPy
 
-### 3. Instale as Bibliotecas Necessárias (se necessário)
+* ### 3. Instale as Bibliotecas Necessárias (se necessário)
 
 No Colab, você pode instalar as bibliotecas necessárias executando o seguinte comando no início do notebook:
 
     !pip install numpy pandas matplotlib seaborn scikit-learn scipy gdown
 
-### 4. Baixe e extraia o dataset.
+* ### 4. Baixe e extraia o dataset.
 
 O código já está configurado para baixar automaticamente o dataset do Google Drive:
 
     !gdown '1Q_2S28BQRsGAm105ORcqXDGR0spydsCq' --output 'UCI HAR Dataset.zip'
     !unzip 'UCI HAR Dataset.zip'
 
-### 5. Execute as Células do Notebook
+* ### 5. Execute as Células do Notebook
 
 Siga as seções do notebook para:
     Importar bibliotecas.
@@ -47,23 +64,23 @@ Siga as seções do notebook para:
     
 ## 📊 Principais Conclusões e Considerações
 
-#### Distribuição e Correlação dos Dados:
+* ### Distribuição e Correlação dos Dados:
 As variáveis apresentam padrões específicos que foram explorados por meio da análise de distribuição e matriz de correlação.
 A redução dimensional com PCA permitiu visualizar melhor os agrupamentos iniciais.
 
-#### Definição do Número de Clusters:
+* ### Definição do Número de Clusters:
 O número ideal de clusters foi definido como k=6 com base no método do cotovelo e no Silhouette Score.
 Os clusters apresentaram uma separação satisfatória em 2D, indicando que as atividades humanas podem ser agrupadas de maneira coerente com base nas   características do dataset.
 
-#### Avaliação de Performance:
+* ### Avaliação de Performance:
 O Silhouette Score final obteve um valor satisfatório, sugerindo que os agrupamentos formados possuem boa coesão interna e separação externa.
 A repetição do K-means várias vezes confirmou a estabilidade dos agrupamentos.
 
-#### Limitações:
+* ### Limitações:
 O dataset foi reduzido para duas dimensões com PCA, o que pode simplificar demais a complexidade dos dados originais.
 Algumas atividades podem ter sobreposição em 2D, sugerindo que outras técnicas de clustering e mais componentes principais podem melhorar os resultados.
 
-### 👥 Autores
+## 👥 Autores
 
 Grupo 24
 
