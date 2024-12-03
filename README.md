@@ -8,10 +8,9 @@ Este projeto tem como objetivo implementar o algoritmo de agrupamento K-means pa
 
 ## 🛠️ Instruções para Executar o Código
 
-### 1. Clone ou baixe este repositório.
-
-    git clone https://github.com/seuprojeto/kmeans-har.git
-    cd kmeans-har
+### 1. Carregue o Arquivo Notebook
+Faça upload do arquivo ProjetoTIC36_KMeans.ipynb para o Google Drive.
+Abra o notebook diretamente no Colab ou faça o upload do arquivo local para o ambiente Colab.
 
 ### 2. Certifique-se de que você tem o Python e os pacotes necessários instalados.
 
@@ -24,15 +23,12 @@ Requisitos:
     Seaborn
     Scikit-learn
     SciPy
-    fpdf (para geração do relatório técnico)
 
-Você pode instalar os pacotes necessários com o seguinte comando:
+##### 3. Instale as Bibliotecas Necessárias (se necessário)
 
-    pip install numpy pandas matplotlib seaborn scikit-learn scipy fpdf
+No Colab, você pode instalar as bibliotecas necessárias executando o seguinte comando no início do notebook:
 
-### 3. Execute o notebook ou script Python.
-
-    jupyter notebook projeto_kmeans_har.ipynb
+    !pip install numpy pandas matplotlib seaborn scikit-learn scipy gdown
 
 ### 4. Baixe e extraia o dataset.
 
@@ -41,6 +37,14 @@ O código já está configurado para baixar automaticamente o dataset do Google 
     !gdown '1Q_2S28BQRsGAm105ORcqXDGR0spydsCq' --output 'UCI HAR Dataset.zip'
     !unzip 'UCI HAR Dataset.zip'
 
+### 5. Execute as Células do Notebook
+
+Siga as seções do notebook para:
+    Importar bibliotecas.
+    Realizar a análise exploratória dos dados.
+    Implementar o algoritmo K-means.
+    Avaliar o modelo com gráficos de dispersão, curvas de inércia e Silhouette Score.
+    
 ## 📊 Principais Conclusões e Considerações
 
 #### Distribuição e Correlação dos Dados:
@@ -66,3 +70,11 @@ Grupo 24
 Jeferson Braga Luz,
 
 Rafael Rodrigues Souza
+
+## 📌 Dicas Adicionais para o Google Colab
+
+Caso deseje salvar o notebook com os resultados no seu Google Drive, selecione Arquivo > Salvar uma cópia no Drive.
+Para baixar arquivos, use o comando:
+
+    from google.colab import files
+    files.download('Relatorio_KMeans_HAR.pdf')
